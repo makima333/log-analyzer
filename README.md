@@ -62,27 +62,30 @@ GLOBAL OPTIONS:
 ```
 
 ## Usage
- * SubCommand
+* SubCommand
   - time:時間毎のアクセス数を表示します。
-    > # log-analyzer time [file name]
-  - host:クライアントIP毎のアクセス数を表示します。
-    > # log-analyzer host [file name]
 
- * Option
+    > \# log-analyzer time [file name]
+
+  - host:クライアントIP毎のアクセス数を表示します。
+
+    > \# log-analyzer host [file name]
+
+* Option
   - "-s": ログ解析開始日の指定　例:2016-01-01
-    > # log-analyzer -s 2016-01-01 time [file name]
+    > \# log-analyzer -s 2016-01-01 time [file name]
 
   - "-e": ログ解析修了日の指定 "-s" と併用も可能
-    > # log-analyzer -e 2017-01-01 time [file name]
+    > \# log-analyzer -e 2017-01-01 time [file name]
 
 
  * Multi log file
  複数ファイルを指定することも可
- > # log-analyzer time [file name01] [file name02]
+ > \# log-analyzer time [file name01] [file name02]
 
  * exapmle
  "test01.log"と"test02.log"の2016年4月1日から2017年2月1日までのクライアントIP毎のアクセス数が知りたい場合
- > $ log-analyzer -s 2016-04-01 -e 2017-02-01 host test01.log test02.log
+ > \# log-analyzer -s 2016-04-01 -e 2017-02-01 host test01.log test02.log
 
 ## Other
   * flow chart
