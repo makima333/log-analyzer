@@ -88,12 +88,12 @@ GLOBAL OPTIONS:
  > \# log-analyzer -s 2016-04-01 -e 2017-02-01 host test01.log test02.log
 
 ## Other
-  * flow chart
+* flow chart  
   ①ファイル読み込み　②1行取得　③1行分のlogの各情報を構造体(line)に格納しバッファ(lfactor)に書き込む　④②に戻る  
   これと並列して以下の作業を行う
   ①バッファの読み込み ②日付の判定 ③集計用の変数に格納
 
-  * faster (high spec cpu)
+* faster (high spec cpu)  
   マルチコアのCPUで実行する場合はファイルを分割して実行した方が早い。
     - 1万行のログファイルを分析した場合の実行時間　0m3.160s
     - 5千行のログファイルを2つ指定した場合の実行時間　0m2.236s
