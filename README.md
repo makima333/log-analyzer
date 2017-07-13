@@ -16,7 +16,7 @@ apache ログを分析し、時間帯毎のアクセス数とクライアントI
 
 1. Install docker  
   * [docker docs](https://docs.docker.com/engine/installation/)
-  を参照する
+  を参照してdocker をインストールしてください。
 2. Build container image  
 [image name]はビルドするコンテナイメージの名前になるので、任意に指定する。
    >  
